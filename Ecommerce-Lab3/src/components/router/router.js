@@ -3,6 +3,7 @@ import Home from "../../page/home/home";
 import ProductDetails from '../../page/productDetails/productDetails'
 import NavigationBar from "../navbar/navbar";
 import RegisterForm from "../../page/register/register";
+import NotFound from "../components/NotFound/NotFound";
 
 function Layout() {
     return (
@@ -29,7 +30,10 @@ export const router = createBrowserRouter([
               path:"/register",
               element: <RegisterForm/>
             },
-           
+           {
+              path: "*",
+              element: <NotFound />,
+            },
           ],
     }
 ])
