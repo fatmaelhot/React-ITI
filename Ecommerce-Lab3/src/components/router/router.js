@@ -3,7 +3,7 @@ import Home from "../../page/home/home";
 import ProductDetails from '../../page/productDetails/productDetails'
 import NavigationBar from "../navbar/navbar";
 import RegisterForm from "../../page/register/register";
-import NotFound from "../components/NotFound/NotFound";
+import NotFound from "../pagenotfound/notfound";
 
 function Layout() {
     return (
